@@ -1,5 +1,5 @@
 <form class="form">
-    <h1>CRIANDO NOVO TÉCNICO</h1>
+    <h1>ATUALIZANDO TÉCNICO</h1>
 
     <mat-form-field class="full-width" appearance="fill">
       <mat-label>Nome</mat-label>
@@ -20,7 +20,7 @@
       </mat-form-field>
 
       <div class="buttons">
-        <button class="mat-elevation-z8" (click)="create()" [disabled]="errorValidNome() || errorValidCPF() || errorValidTelefone() " class="mat-elevation-z8" mat-raised-button color="primary">CRIAR</button>
+        <button class="mat-elevation-z8" [disabled]="errorValidNome() || errorValidCPF() || errorValidTelefone() " class="mat-elevation-z8" mat-raised-button color="primary">ATUALIZAR</button>
         <button class="mat-elevation-z8" (click)="cancel()" class="mat-elevation-z8" mat-raised-button color="warn">CANCELAR</button>
      </div> 
     
