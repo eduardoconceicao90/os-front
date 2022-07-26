@@ -16,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HeaderComponent } from './views/components/template/header/header.component';
 import { FooterComponent } from './views/components/template/footer/footer.component';
@@ -51,7 +52,8 @@ import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-creat
     MatInputModule,
     MatDatepickerModule,
     FormsModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSnackBarModule
     
   ],
   providers: [],
