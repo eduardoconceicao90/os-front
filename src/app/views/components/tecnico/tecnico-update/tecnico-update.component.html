@@ -20,7 +20,7 @@
       </mat-form-field>
 
       <div class="buttons">
-        <button class="mat-elevation-z8" [disabled]="errorValidNome() || errorValidCPF() || errorValidTelefone() " class="mat-elevation-z8" mat-raised-button color="primary">ATUALIZAR</button>
+        <button class="mat-elevation-z8" (click)="update()" [disabled]="errorValidNome() || errorValidCPF() || errorValidTelefone() " class="mat-elevation-z8" mat-raised-button color="primary">ATUALIZAR</button>
         <button class="mat-elevation-z8" (click)="cancel()" class="mat-elevation-z8" mat-raised-button color="warn">CANCELAR</button>
      </div> 
     
