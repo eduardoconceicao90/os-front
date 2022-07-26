@@ -23,3 +23,12 @@
   table{
     width: 100%;
   }
+
+  .edit{
+    color: rgb(127, 241, 13);
+}
+
+.delete{
+    color: rgb(202, 45, 45);
+    margin-left: .5rem;
+}
