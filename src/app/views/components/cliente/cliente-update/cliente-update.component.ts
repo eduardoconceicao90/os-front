@@ -11,7 +11,7 @@ import { ClienteService } from 'src/app/services/cliente.service';
 })
 export class ClienteUpdateComponent implements OnInit {
 
-  id_user = ''
+  id_cli = ''
 
   cliente : Cliente = {
     id: '',
@@ -27,12 +27,12 @@ export class ClienteUpdateComponent implements OnInit {
   constructor(private router : Router, private service : ClienteService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.id_user = this.route.snapshot.paramMap.get('id')!
+    this.id_cli = this.route.snapshot.paramMap.get('id')!
     this.findById();
   }
 
   findById(): void {
-    this.service.findById(this.id_user).subscribe((resposta) => {
+    this.service.findById(this.id_cli).subscribe((resposta) => {
       this.cliente = resposta;
     })
   }
