@@ -32,3 +32,15 @@
   color: rgba(177, 199, 155, 0.555);
   margin-left: .5rem;
 }
+
+td.baixa{
+  color: rgb(60, 146, 60);
+}
+
+td.media{
+  color: rgb(94, 255, 0);
+}
+
+td.alta{
+  color: rgba(255, 0, 0, 0.959);
+}
