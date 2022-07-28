@@ -1,4 +1,5 @@
 <div class="div container">
+  <h1>CRIANDO NOVA ORDEM DE SERVIÇO</h1>
     <div class="div labels">
         <mat-form-field appearance="fill">
             <mat-label>Selecione um técnico</mat-label>
@@ -17,18 +18,18 @@
           <mat-form-field appearance="fill">
             <mat-label>Selecione uma prioridade</mat-label>
             <mat-select [(value)]="os.prioridade">
-              <mat-option value="0">ABERTO</mat-option>
-              <mat-option value="1">EM ANDAMENTO</mat-option>
-              <mat-option value="2">ENCERRADO</mat-option>
+              <mat-option value="0">BAIXA</mat-option>
+              <mat-option value="1">MÉDIA</mat-option>
+              <mat-option value="2">ALTA</mat-option>       
             </mat-select>
           </mat-form-field>
 
           <mat-form-field appearance="fill">
             <mat-label>Selecione um status</mat-label>
             <mat-select [(value)]="os.status">
-              <mat-option value="0">BAIXA</mat-option>
-              <mat-option value="1">MÉDIA</mat-option>
-              <mat-option value="2">ALTA</mat-option>
+              <mat-option value="0">ABERTO</mat-option>
+              <mat-option value="1">EM ANDAMENTO</mat-option>
+              <mat-option value="2">ENCERRADO</mat-option>
             </mat-select>
           </mat-form-field>
     </div>
@@ -41,5 +42,5 @@
       </form>
 
       <button (click)="create()" class="mat-elevation-z8" mat-raised-button color="accent">CRIAR</button>
-      <button class="mat-elevation-z8" mat-raised-button color="warn">CANCELAR</button>
+      <button (click)="cancel()" class="mat-elevation-z8" mat-raised-button color="warn">CANCELAR</button>
 </div>
