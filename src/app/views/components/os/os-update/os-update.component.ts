@@ -81,7 +81,7 @@ export class OsUpdateComponent implements OnInit {
 
     if(this.os.prioridade == 'BAIXA'){
       this.os.prioridade = 0;
-    } else if (this.os.prioridade == 'MÉDIA'){
+    } else if (this.os.prioridade == 'MEDIA'){
       this.os.prioridade = 1;
     } else {
       this.os.prioridade = 2;
